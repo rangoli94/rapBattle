@@ -20,6 +20,9 @@ module.exports = {
       colors: {
         "lightBlue": "rgb(249 251 253)",
         "darkPurple": "rgb(111, 66, 193)",
+        "gold": "rgb(254 243 199)",
+        "silver": "rgb(239 240 240)",
+        "lightPurple": "rgba(111, 66, 193, 0.25)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
