@@ -21,9 +21,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         title: "text-primary",
         selectChar: "border border-input bg-lightPurple shadow-sm hover:bg-lightPurple hover:text-accent-foreground",
-        select: "h-6 w-40 text-white border border-input bg-darkPurple shadow-sm hover:bg-darkPurple ",
-
-
+        select: "h-6 w-40 text-white border border-input bg-darkPurple shadow-sm hover:bg-darkPurple",
       },
       size: {
         default: "h-9 px-4 py-2",
