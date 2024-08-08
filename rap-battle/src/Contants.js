@@ -31,3 +31,5 @@ export const characters = [
         img: WolverinePics
     }
 ];
+
+export const API_KEY = 'AIzaSyDRUQHpQrDNHtGB6nMOes8t7JYYru1pb6w'
