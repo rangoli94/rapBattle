@@ -62,7 +62,7 @@ function MessageComponent({ isChar1Message, text, char, idx, editContent }) {
                             <div className="break-words">
                                 {text}
                                 {
-                                    isLoading ? <span className='inline-flex relative top-2 left-2'><Loader /> </span>:
+                                    isLoading ? <span className='inline-flex relative top-2 left-2'><Loader /> </span> :
                                         <button className='relative top-2 left-2' onClick={convertTextToSpeech}>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -72,7 +72,7 @@ function MessageComponent({ isChar1Message, text, char, idx, editContent }) {
 
                                 }
                                 {
-                                    error && 
+                                    error &&
                                     <div className='mt-2'><Badge variant="destructive">{error}</Badge></div>
                                 }
 

@@ -7,8 +7,8 @@ function CharacterCard({ char, selectCharacter, isChar1, char1Name, char2Name })
   const cardClasses = classNames(
     'bg-white p-4 rounded-lg shadow-md text-center w-[10rem] h-[14rem] flex flex-col justify-between',
     {
-      'border border-darkPurple': (isChar1 && char1Name === char.name) || (!isChar1 && char2Name === char.name), 
-      "cursor-not-allowed opacity-50": (isChar1 && char2Name === char.name) || (!isChar1 && char1Name === char.name) 
+      'border border-darkPurple': (isChar1 && char1Name === char.name) || (!isChar1 && char2Name === char.name),
+      "cursor-not-allowed opacity-50": (isChar1 && char2Name === char.name) || (!isChar1 && char1Name === char.name)
     }
   );
   return (
@@ -21,9 +21,9 @@ function CharacterCard({ char, selectCharacter, isChar1, char1Name, char2Name })
           <AvatarFallback>{char.name.charAt(0).toUpperCase()}</AvatarFallback>
         </Avatar>
       </div>
-      <Button 
-        variant='selectChar' className='w-full' 
-        disabled={(isChar1 && char2Name === char.name)   ||    (!isChar1 && char1Name === char.name) }
+      <Button
+        variant='selectChar' className='w-full'
+        disabled={(isChar1 && char2Name === char.name) || (!isChar1 && char1Name === char.name)}
         onClick={() => selectCharacter(char, isChar1)}>
         Select
       </Button>
