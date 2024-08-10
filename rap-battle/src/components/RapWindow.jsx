@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MessageComponent from './MessageComponent'
 import { useLocation, useNavigate } from 'react-router-dom'
-import useAxios from '../customHooks/useAxios.hook'
 import useGeminiAI from '../customHooks/useGeminiAI.hook'
 import Loader from './ui/loader'
 import { Badge } from "./ui/badge"
